@@ -7,55 +7,68 @@ import { RotateCcw, LogOut } from "lucide-react";
 import { signOut, signIn, useSession } from "next-auth/react";
 
 export default function Page() {
+  //Chave da API
   const apiKey = "162217b4a78b14c093d6a30b3d818269";
 
+  //Session
   const { data: session } = useSession();
 
-  const [weather, setWeather] = useState(null);
-  const [error, setError] = useState(null);
-  const [city, setCity] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  //Variaveis de estado
+  const [weather, setWeather] = useState(null); //Estado para definir o clima
+  const [error, setError] = useState(null); //Estado para erros
+  const [city, setCity] = useState(""); //Estado para definir as cidades/locais
+  const [isLoading, setIsLoading] = useState(false); //Estado para carregamento
 
   const fetchWeather = async () => {
+    //Definindo o loading como true
     setIsLoading(true);
     setWeather(null);
     setError(null);
-
+   
     try {
+      //Buscando a API com fetch
       const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+      //Transformando o resultado em json
       const data = await response.json();
 
+      //Caso ocorra algum, mostra o status do erro
       if (!response.ok) {
         throw new Error(`HTTP ERROR: ${response.status}`);
       }
 
+      //Definindo a clima, com um tempo para aparecer na tela
       setTimeout(() => {
         setWeather(data);
         setIsLoading(false);
       }, 1500);
 
+    //Capturando erro
     } catch (error) {
       setError("Something went wrong. Please try again later.");
       setIsLoading(false);
     }
 
+    //Verifica se usuario escreveu algo no input
     if (city.trim() === "") {
       setError("Please enter a location.");
     }
   };
 
+  //Pesquisar a cidade com tecla enter
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       fetchWeather();
     }
   };
 
+  //Resetar o pesquisa
   const handleReset = () => {
     setCity("");
     setWeather(null);
     setError(null);
   };
 
+  //Conteúdo da pagina
   return (
     <div>
       <header className="h-screen flex items-center justify-center flex-col gap-6">
