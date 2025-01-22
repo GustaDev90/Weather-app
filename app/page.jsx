@@ -31,7 +31,7 @@ export default function Page() {
       //Transformando o resultado em json
       const data = await response.json();
 
-      //Caso ocorra algum, mostra o status do erro
+      //Caso ocorra algum erro, mostra o status do mesmo
       if (!response.ok) {
         throw new Error(`HTTP ERROR: ${response.status}`);
       }
