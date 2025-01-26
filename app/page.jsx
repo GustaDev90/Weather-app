@@ -94,16 +94,13 @@ export default function Page() {
           Weather
         </h1>
 
-       {weather && (
-         <img
-           src={`https://flagcdn.com/w320/${weather.sys.country.toLowerCase()}.png`}
-           alt={`${weather.sys.country} flag`}
-           className="w-16 h-12 m-auto rounded-xl"
-         />
-        )}
-
         {weather && (
-          <div>
+          <div className="gap-4">
+           <img
+             src={`https://flagcdn.com/w320/${weather.sys.country.toLowerCase()}.png`}
+             alt={`${weather.sys.country} flag`}
+             className="w-16 h-12 m-auto rounded-xl"
+            />
             <p className="text-2xl font-mono">Location: {weather.name}</p>
           </div>
         )}
