@@ -24,7 +24,6 @@ export default function Page() {
     setIsLoading(true);
     setWeather(null);
     setError(null);
-    setCity("")
    
     try {
       //Buscando a API com fetch
@@ -53,6 +52,8 @@ export default function Page() {
     if (city.trim() === "") {
       setError("Please enter a location.");
     }
+
+    setCity("")
   };
 
   //Pesquisar a cidade com tecla enter
