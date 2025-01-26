@@ -101,7 +101,7 @@ export default function Page() {
              alt={`${weather.sys.country} flag`}
              className="w-16 h-12 m-auto rounded-xl"
             />
-            <p className="text-2xl font-mono mt-2">Location: {weather.name}</p>
+            <p className="text-2xl font-mono mt-4">Location: {weather.name}</p>
           </div>
         )}
 
