@@ -24,6 +24,7 @@ export default function Page() {
     setIsLoading(true);
     setWeather(null);
     setError(null);
+    setCity("")
    
     try {
       //Buscando a API com fetch
