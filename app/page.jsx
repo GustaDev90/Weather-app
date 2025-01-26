@@ -94,7 +94,16 @@ export default function Page() {
           Weather
         </h1>
 
-        {weather && <p className="text-2xl font-mono">Location: {weather.name}</p>}
+        {weather && (
+          <div>
+           <p className="text-2xl font-mono">Location: {weather.name}</p>
+           <img
+             src={`https://flagcdn.com/w320/${weather.sys.country.toLowerCase()}.png`}
+             alt={`${weather.sys.country} flag`}
+             className="w-12 h-12"
+           />
+          </div>
+        )}
 
         <main className="text-center">
           {error && <p className="text-red-500">{error}</p>}
