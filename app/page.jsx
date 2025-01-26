@@ -95,7 +95,7 @@ export default function Page() {
         </h1>
 
         {weather && (
-          <div className="gap-4">
+          <div className="gap-6">
            <img
              src={`https://flagcdn.com/w320/${weather.sys.country.toLowerCase()}.png`}
              alt={`${weather.sys.country} flag`}
