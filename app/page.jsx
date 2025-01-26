@@ -44,7 +44,7 @@ export default function Page() {
 
     //Capturando erro
     } catch (error) {
-      setError("Something went wrong. Please try again later.");
+      setError("Please enter a valid location to proceed.");
       setIsLoading(false);
     }
 
