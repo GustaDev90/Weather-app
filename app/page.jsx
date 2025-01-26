@@ -100,7 +100,7 @@ export default function Page() {
            <img
              src={`https://flagcdn.com/w320/${weather.sys.country.toLowerCase()}.png`}
              alt={`${weather.sys.country} flag`}
-             className="w-12 h-12"
+             className="w-16 h-12 m-auto"
            />
           </div>
         )}
