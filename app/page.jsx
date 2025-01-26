@@ -130,6 +130,7 @@ export default function Page() {
             value={city}
             onChange={(e) => setCity(e.target.value)}
             onKeyPress={handleKeyPress}
+            disabled={isLoading}
             placeholder="Enter a location"
             className="border-black-500 border-2 px-6 rounded-md w-94 h-12 sm:w-64"
           />
