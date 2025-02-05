@@ -84,7 +84,7 @@ export default function Page() {
           ) : (
             <Button 
               variant="outline" 
-              onClick={() => signIn()}
+              onClick={() => signIn("github")}
             >
               Sign in
             </Button>
