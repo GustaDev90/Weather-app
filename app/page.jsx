@@ -24,8 +24,12 @@ export default function Page() {
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`,
       )
+      
       const data = await response.json()
-      if (!response.ok) throw new Error(`HTTP ERROR: ${response.status}`)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ERROR: ${response.status}`)
+      }
       setTimeout(() => {
         setWeather(data)
         setIsLoading(false)
@@ -34,11 +38,14 @@ export default function Page() {
       setError("Please enter a valid location to proceed.")
       setIsLoading(false)
     }
-    if (city.trim() === "") setError("Please enter a location.")
+    if (city.trim() === "") {
+      setError("Please enter a location.")
+    }
   }
 
   const handleKeyPress = (e) => {
-    if (e.key === "Enter") fetchWeather()
+    if (e.key === "Enter") {
+       fetchWeather()
   }
 
   const handleReset = () => {
