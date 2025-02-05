@@ -46,6 +46,7 @@ export default function Page() {
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
        fetchWeather()
+    }
   }
 
   const handleReset = () => {
