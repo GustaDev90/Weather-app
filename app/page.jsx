@@ -37,6 +37,7 @@ export default function Page() {
       setError("Please enter a valid location to proceed.")
       setIsLoading(false)
     }
+    
     if (city.trim() === "") {
       setError("Please enter a location.")
     }
