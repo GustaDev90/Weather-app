@@ -68,7 +68,7 @@ export default function Page() {
       </header>
 
       <div className="flex-grow flex items-center justify-center flex-col gap-6">
-        <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold">Check Weather</h1>
+        <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold font-mono">Check Weather</h1>
 
         {weather && (
           <div>
@@ -106,7 +106,7 @@ export default function Page() {
             onKeyPress={handleKeyPress}
             disabled={isLoading}
             placeholder="Enter a location"
-            className="border-black-500 border-2 px-6 rounded-md w-94 h-12 sm:w-64"
+            className="border-black-500 border-2 px-6 rounded-md w-[200px] h-12 sm:w-64"
           />
           <Button onClick={fetchWeather} disabled={isLoading} className="py-6 px-5 w-full">
             {isLoading ? (
