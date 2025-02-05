@@ -68,7 +68,7 @@ export default function Page() {
       </header>
 
       <div className="flex-grow flex items-center justify-center flex-col gap-6">
-        <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold">Weather</h1>
+        <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold">Check Weather</h1>
 
         {weather && (
           <div>
