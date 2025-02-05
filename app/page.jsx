@@ -16,8 +16,10 @@ export default function Page() {
 
   const fetchWeather = async () => {
     setIsLoading(true)
+    
     setWeather(null)
     setError(null)
+    
     setCity("")
 
     try {
