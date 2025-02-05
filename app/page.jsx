@@ -106,7 +106,7 @@ export default function Page() {
             onKeyPress={handleKeyPress}
             disabled={isLoading}
             placeholder="Enter a location"
-            className="border-black-500 border-2 px-6 rounded-md w-[750px] h-12 sm:w-64"
+            className="border-black-500 border-2 px-6 rounded-md md:w-[350px] h-12 sm:w-64"
           />
           <Button onClick={fetchWeather} disabled={isLoading} className="py-6 px-5 w-full">
             {isLoading ? (
