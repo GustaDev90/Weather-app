@@ -8,7 +8,9 @@ import { signOut, signIn, useSession } from "next-auth/react"
 
 const Page = () => {
   const apiKey = "162217b4a78b14c093d6a30b3d818269"
+  
   const { data: session } = useSession()
+  
   const [weather, setWeather] = useState(null)
   const [error, setError] = useState(null)
   const [city, setCity] = useState("")
