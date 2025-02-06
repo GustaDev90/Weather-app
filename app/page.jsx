@@ -40,7 +40,7 @@ export default function Page() {
       setIsLoading(false)
     }
     
-    if (city.trim() === "") {
+    if (city === "") {
       setError("Please enter a location.")
     }
   }
