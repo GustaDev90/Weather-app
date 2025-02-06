@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { RotateCcw, LogOut } from "lucide-react"
 import { signOut, signIn, useSession } from "next-auth/react"
 
-export default function Page() {
+function Page() {
   const apiKey = "162217b4a78b14c093d6a30b3d818269"
   const { data: session } = useSession()
   const [weather, setWeather] = useState(null)
@@ -136,5 +136,7 @@ export default function Page() {
     </div>
   )
 }
+
+export default Page;
 
 
