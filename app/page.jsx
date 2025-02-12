@@ -81,6 +81,7 @@ const Page = () => {
 
       <div className="flex-grow flex items-center justify-center flex-col gap-6">
         <h1 className="text-5xl sm:text-6xl md:text-6xl font-bold font-mono">Check Weather</h1>
+        <p>Type your location you want, and check the weather! 🌤 </p>
 
         {weather && (
           <div>
