@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { RotateCcw, LogOut } from "lucide-react"
 import { signOut, signIn, useSession } from "next-auth/react"
+import Main from "./main"
 
 const Page = () => {
   const apiKey = "162217b4a78b14c093d6a30b3d818269"
