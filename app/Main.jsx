@@ -119,7 +119,7 @@ const Main = () => {
             onKeyPress={handleKeyPress}
             disabled={isLoading}
             placeholder="Enter a location"
-            className="focus:outline-none focus:ring-0 border-b px-6 rounded-md w-48 h-12 sm:w-64"
+            className="focus:outline-none focus:ring-0 border-4 px-6 rounded-md w-48 h-12 sm:w-64"
           />
           <Button onClick={fetchWeather} disabled={isLoading} className="py-6 px-5 w-full">
             {isLoading ? (
