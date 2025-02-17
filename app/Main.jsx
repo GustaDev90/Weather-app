@@ -119,7 +119,7 @@ const Main = () => {
             onKeyPress={handleKeyPress}
             disabled={isLoading}
             placeholder="Enter a location"
-            className="border border-black px-6 rounded-md w-48 h-12 sm:w-64"
+            className="focus:outline-none focus:ring-0 border-b px-6 rounded-md w-48 h-12 sm:w-64"
           />
           <Button onClick={fetchWeather} disabled={isLoading} className="py-6 px-5 w-full">
             {isLoading ? (
@@ -129,7 +129,7 @@ const Main = () => {
             )}
           </Button>
           <Button
-            className="py-6 px-10 bg-white text-black border-2 hover:bg-gray-100 font-bold py-6 px-6 text-sm rounded-full"
+            className="py-6 px-10 bg-white text-black border-4 hover:bg-gray-100 font-bold py-6 px-6 text-sm rounded-full"
             onClick={handleReset}
           >
             <RotateCcw />
