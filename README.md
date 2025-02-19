@@ -13,3 +13,7 @@
 - **Tratamento de erros na API**: A aplicação pode apontar erros caso ocorra algum erro na API.
 
 ---
+## 🔗 Objetivo do projeto
+
+- **Testar a autenticação do Next Auth.**
+-  **Treinar minhas habilidades em consumir APIs.**
