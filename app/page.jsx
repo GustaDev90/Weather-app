@@ -1,11 +1,7 @@
 import Main from "./Main"
 
 const Page = () => {
-  return (
-    <>
-     <Main/>
-    </>
-  )
+  return <Main/>
 }
 
 export default Page;
