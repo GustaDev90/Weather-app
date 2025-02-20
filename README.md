@@ -18,8 +18,6 @@
 - **Testar a autenticação do Next Auth.**
 -  **Treinar minhas habilidades em consumir APIs.**
 
----
-
 ## ⚡Tecnologias do projeto
 
 <div align="left">
