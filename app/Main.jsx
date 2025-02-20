@@ -99,13 +99,13 @@ const Main = () => {
           {weather && (
             <div className="bg-white p-4 rounded rounded-xl flex gap-10">
               <div className="text-xl">
-                <p>Temperature: {weather.main.temp} °C</p>
-                <p>Wind Speed: {weather.wind.speed} m/s</p>
-                <p>Condition: {weather.weather[0].description}</p>
-                <p>Humidity: {weather.main.humidity}%</p>
-                <p>Pressure: {weather.main.pressure} hPa</p>
-                <p>Visibility: {weather.visibility} meters</p>
-                <p>Cloudiness: {weather.clouds.all}%</p>
+                <p>Temperature: <strong>{weather.main.temp}</strong> °C</p>
+                <p>Wind Speed: <strong>{weather.wind.speed}</strong> m/s</p>
+                <p>Condition: <strong>{weather.weather[0].description}</strong></p>
+                <p>Humidity: <strong>{weather.main.humidity}</strong>%</p>
+                <p>Pressure: <strong>{weather.main.pressure}</strong> hPa</p>
+                <p>Visibility: <strong>{weather.visibility}</strong> meters</p>
+                <p>Cloudiness: <strong>{weather.clouds.all}</strong>%</p>
               </div>
             </div>
           )}
