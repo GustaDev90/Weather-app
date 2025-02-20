@@ -18,6 +18,8 @@
 - **Testar a autenticação do Next Auth.**
 -  **Treinar minhas habilidades em consumir APIs.**
 
+ ---
+
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js logo" />
   <img width ="12" />
