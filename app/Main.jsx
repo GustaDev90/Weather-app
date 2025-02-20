@@ -7,7 +7,7 @@ import { RotateCcw, LogOut } from "lucide-react"
 import { signOut, signIn, useSession } from "next-auth/react"
 
 const Main = () => {
-  const apiKey = "162217b4a78b14c093d6a30b3d818269"
+  const apiKey = process.env.NEXT_PUBLIC_WEATHER_API;
   
   const { data: session } = useSession()
   
