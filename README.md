@@ -13,12 +13,10 @@
 - **Tratamento de erros na API**: A aplicação pode apontar erros caso ocorra algum erro na API.
 
 ---
-## 🎯 Objetivos do projeto
+## 🎯 Objetivos e tecnlogias utilizadas
 
 - **Testar a autenticação do Next Auth.**
 -  **Treinar minhas habilidades em consumir APIs.**
-
-## ⚡Tecnologias do projeto
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js logo" />
