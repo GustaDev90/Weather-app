@@ -35,7 +35,7 @@ const Main = () => {
       setTimeout(() => {
         setWeather(data)
         setIsLoading(false)
-      }, 1500)
+      }, 1000)
       
     } catch (error) {
       setError("Please enter a valid location to proceed.")
