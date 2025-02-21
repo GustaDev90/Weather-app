@@ -4,6 +4,5 @@ export default function Page () {
   return <Main/>
 }
 
-export default Page;
 
 
