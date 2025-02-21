@@ -1,6 +1,6 @@
 import Main from "./Main"
 
-const Page = () => {
+export default function Page () {
   return <Main/>
 }
 
