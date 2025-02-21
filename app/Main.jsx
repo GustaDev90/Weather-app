@@ -133,7 +133,7 @@ const Main = () => {
             )}
           </Button>
           <Button
-            className="py-6  bg-white text-black border border-black font-bold px-6 text-sm rounded-full"
+            className="py-6 border font-bold px-6 text-sm rounded-full"
             onClick={handleReset}
           >
             <RotateCcw />
