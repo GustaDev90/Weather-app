@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { RetroGrid } from "@/components/magicui/retro-grid"
+import { HyperText } from "@/components/magicui/hyper-text"
 import { RotateCcw, LogOut } from "lucide-react"
 import { signOut, signIn, useSession } from "next-auth/react"
 
@@ -49,7 +51,7 @@ const Main = () => {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-       fetchWeather()
+       fetchWeather();
     }
   }
 
@@ -61,6 +63,7 @@ const Main = () => {
 
   return (
     <main className="min-h-screen flex flex-col">
+      <RetroGrid />
       <header className="p-4 flex justify-start">
         {session ? (
           <Button variant="outline" onClick={() => signOut()}>
@@ -80,7 +83,7 @@ const Main = () => {
       </header>
 
       <div className="flex-grow flex items-center justify-center flex-col gap-6">
-        <h1 className="text-5xl sm:text-6xl md:text-6xl font-bold font-mono">Check Weather</h1>
+        <HyperText text="Weather App" className="text-7xl font-bold text-center">Check Weather</HyperText>
         <p>Type your location, and check the weather! 🌤 </p>
 
         {weather && (
@@ -96,6 +99,7 @@ const Main = () => {
 
         <main className="text-center">
           {error && <p className="text-red-500">{error}</p>}
+
           {weather && (
             <div className="bg-white p-4 rounded rounded-xl flex gap-10">
               <div className="text-xl">
@@ -119,7 +123,7 @@ const Main = () => {
             onKeyPress={handleKeyPress}
             disabled={isLoading}
             placeholder="Enter a location"
-            className="focus:outline-none focus:ring-0 border-4 px-6 rounded-md w-48 h-12 sm:w-64"
+            className="focus:outline-none focus:ring-0 border border-black px-6 rounded-md w-48 h-12 sm:w-64"
           />
           <Button onClick={fetchWeather} disabled={isLoading} className="py-6 px-5 w-full">
             {isLoading ? (
@@ -129,7 +133,7 @@ const Main = () => {
             )}
           </Button>
           <Button
-            className="py-6 px-10 bg-white text-black border-4 hover:bg-gray-100 font-bold py-6 px-6 text-sm rounded-full"
+            className="py-6  bg-white text-black border border-black font-bold px-6 text-sm rounded-full"
             onClick={handleReset}
           >
             <RotateCcw />
