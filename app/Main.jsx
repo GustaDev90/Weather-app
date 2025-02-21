@@ -55,12 +55,6 @@ const Main = () => {
     }
   }
 
-  const handleReset = () => {
-    setCity("")
-    setWeather(null)
-    setError(null)
-  }
-
   return (
     <main className="min-h-screen flex flex-col">
       <RetroGrid />
@@ -131,12 +125,6 @@ const Main = () => {
             ) : (
               "Search"
             )}
-          </Button>
-          <Button
-            className="py-6 border font-bold px-6 text-sm rounded-full"
-            onClick={handleReset}
-          >
-            <RotateCcw />
           </Button>
         </div>
       </div>
