@@ -8,7 +8,7 @@ import { HyperText } from "@/components/magicui/hyper-text"
 import { RotateCcw, LogOut } from "lucide-react"
 import { signOut, signIn, useSession } from "next-auth/react"
 
-const Main = () => {
+export default function Main () {
   const apiKey = process.env.NEXT_PUBLIC_WEATHER_API;
   
   const { data: session } = useSession()
@@ -132,4 +132,3 @@ const Main = () => {
   )
 }
 
-export default Main;
