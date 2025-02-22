@@ -132,7 +132,7 @@ export default function Main () {
               "Search"
             )}
           </Button>
-          <Button onClick={handleReload} variant="outline">
+          <Button onClick={handleReload} variant="outline" className="w-full">
             <RotateCcw size={100}/>
           </Button>
         </div>
