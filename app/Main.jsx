@@ -135,7 +135,7 @@ export default function Main () {
           <Button
             onClick={handleReload}
             variant="outline"
-            className="w-20 h-20 p-4"
+            className="w-20 h-10 p-4"
           >
           <RotateCcw size={100} />
          </Button>
