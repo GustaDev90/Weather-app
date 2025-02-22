@@ -55,6 +55,12 @@ export default function Main () {
     }
   }
 
+  const handleReload = () => {
+    setCity("")
+    setWeather(null)
+    setError(null)
+  }
+
   return (
     <main className="min-h-screen flex flex-col">
       <RetroGrid />
@@ -126,6 +132,7 @@ export default function Main () {
               "Search"
             )}
           </Button>
+          <RotateCcw onClick={handleReload}/>
         </div>
       </div>
     </main>
