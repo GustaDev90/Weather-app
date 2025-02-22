@@ -134,7 +134,7 @@ export default function Main () {
           </Button>
           <Button onClick={handleReload} variant="outline">
             <RotateCcw size={70}/>
-          </BButton>
+          </Button>
         </div>
       </div>
     </main>
