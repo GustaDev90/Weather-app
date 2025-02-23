@@ -63,7 +63,7 @@ export default function Main () {
   return (
     <main className="min-h-screen flex flex-col">
       <RetroGrid />
-      <header className="p-4 flex justify-start">
+       <header className="p-4 flex justify-start">
         {session ? (
           <Button variant="outline" onClick={() => signOut()}>
             <LogOut size={20} className="cursor-pointer -scale-x-100" />
@@ -79,7 +79,7 @@ export default function Main () {
             Sign up with GitHub
           </Button>
         )}
-      </header>
+       </header>
 
       <div className="flex-grow flex items-center justify-center flex-col gap-6">
         <HyperText text="Weather App" className="text-7xl font-bold text-center">Check Weather</HyperText>
