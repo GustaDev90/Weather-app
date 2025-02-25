@@ -43,7 +43,7 @@ export default function Main () {
        setIsLoading(false)
     }
     
-    if (city === "") {
+    if (!city.trim()) {
       setError("Please enter a location.")
     }
   }
