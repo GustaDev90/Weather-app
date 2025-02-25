@@ -48,12 +48,6 @@ export default function Main () {
     }
   }
 
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-       fetchWeather();
-    }
-  }
-
   const handleReload = () => {
     setCity("")
     setWeather(null)
@@ -119,7 +113,7 @@ export default function Main () {
             type="text"
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyPress={(e) => e.key === "Enter" && null}
             disabled={isLoading}
             placeholder="Enter a location"
             className="focus:outline-none focus:ring-0 border border-black px-6 rounded-md w-48 h-12 sm:w-64"
