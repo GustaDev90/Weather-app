@@ -36,8 +36,8 @@ export default function Main () {
       }
       
     } catch (error) {
-      setError("Please enter a valid location to proceed.")
-      setIsLoading(false)
+       setError("Please enter a valid location to proceed.")
+       setIsLoading(false)
       
     } finally {
        setIsLoading(false)
